@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ether Wallet</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/ethereumjs-accounts.js"></script>
+  <script type="text/javascript" src="js/qrcode.min.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+<div class="maincontainer">
+  <div class="row">
+    <h3>Ether Wallet</h3>
+  </div>
+  <p>
+  github.com/kurozael/etherwallet-desktop
+  <br>
+  <span style="font-size:80%;">Adapted from github.com/kvhnuke/etherwallet</span>
+  </p>
+</div>
+<div id="walletgenerator">
+<div class="maincontainer">
+  <div class="row">
+    <div class="six columns">
+      <label>Your Password</label>
+      <input class="u-full-width" type="text" placeholder="Never ever forget this!" id="ethgenpassword">
+    </div>
+    <div class="six columns">
+        <label>Generate Wallet</label>
+        <a class="button button-primary" href="#" id="generatewallet">Generate</a>
+    </div>
+  </div>
+</div>
+<div class="maincontainer" id="generatedWallet" style="display: none;">
+  <div class="row">
+    <div class="six columns">
+      <label>Your Address</label>
+      <input class="u-full-width" type="text" id="address" disabled>
+    </div>
+    <div class="six columns">
+        <label>Your Private Key (Unencrypted)</label>
+        <input class="u-full-width" type="text" id="privkey" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="two columns">
+      <label><b>QR Code (Address)</b></label>
+      <div style="width:150px;" id="qrcodeAdd"></div>
+    </div>
+    <div class="two columns">
+      <label><b>QR Code (Private Key)</b></label>
+      <div style="width:150px;" id="qrcode"></div>
+    </div>
+   </div>
+   <div class="row" style="margin-top:16px;">
+    <div class="one columns">
+        <label>Print QR Codes</label>
+        <a class="button button-primary" href="#" id="printqr">Print</a>
+        <br />
+        <label>Download JSON File (Encrypted)</label>
+        <a class="button button-primary" href="#" id="encdownload">Download</a>
+        <label>Download JSON File (Unencrypted)</label>
+        <a class="button button-primary" href="#" id="unencdownload">Download</a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
