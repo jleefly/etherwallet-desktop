@@ -13,3 +13,10 @@ Windows
 * Open app.exe and type a password for your wallet
 * Click Generate Wallet to create a wallet
 * Save the keys or download them as a JSON file
+
+Screenies
+------------
+
+![screenshot1](https://cloud.githubusercontent.com/assets/486972/9211190/fc4e3d4a-406f-11e5-87ce-63c622e2dc9c.png)
+
+![screenshot2](https://cloud.githubusercontent.com/assets/486972/9211191/fdcce54a-406f-11e5-9659-2b5c78bf33bf.png)
