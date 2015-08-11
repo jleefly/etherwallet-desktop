@@ -14,6 +14,12 @@ Windows
 * Click Generate Wallet to create a wallet
 * Save the keys or download them as a JSON file
 
+
+Planned Features
+-------------
+
+* Check balance of wallet
+
 Screenies
 ------------
 
